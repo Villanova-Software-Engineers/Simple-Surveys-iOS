@@ -6,17 +6,104 @@
 	objectVersion = 90;
 	objects = {
 
-/* Begin PBXFileReference section */
-		000000000000000000000120 /* Simple-Surveys-IOS-proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Surveys-IOS-proj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		B613C454307C989E003BE546 /* SimpleSurveysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C413307C989E003BE546 /* SimpleSurveysApp.swift */; };
+		B613C455307C989E003BE546 /* SurveyContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C44D307C989E003BE546 /* SurveyContainerView.swift */; };
+		B613C456307C989E003BE546 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C411307C989E003BE546 /* AppConfiguration.swift */; };
+		B613C457307C989E003BE546 /* NumericQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C446307C989E003BE546 /* NumericQuestionView.swift */; };
+		B613C458307C989E003BE546 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C440307C989E003BE546 /* HomeView.swift */; };
+		B613C459307C989E003BE546 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C426307C989E003BE546 /* LocationService.swift */; };
+		B613C45A307C989E003BE546 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C414307C989E003BE546 /* Theme.swift */; };
+		B613C45B307C989E003BE546 /* SurveyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C41A307C989E003BE546 /* SurveyConfig.swift */; };
+		B613C45C307C989E003BE546 /* SurveyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C437307C989E003BE546 /* SurveyViewModel.swift */; };
+		B613C45D307C989E003BE546 /* PermissionManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C431307C989E003BE546 /* PermissionManagerProtocol.swift */; };
+		B613C45E307C989E003BE546 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C43D307C989E003BE546 /* LoadingView.swift */; };
+		B613C45F307C989E003BE546 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C42A307C989E003BE546 /* APIClientProtocol.swift */; };
+		B613C460307C989E003BE546 /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C41D307C989E003BE546 /* SurveyRepository.swift */; };
+		B613C461307C989E003BE546 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C429307C989E003BE546 /* APIClient.swift */; };
+		B613C462307C989E003BE546 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C436307C989E003BE546 /* OnboardingViewModel.swift */; };
+		B613C463307C989E003BE546 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C418307C989E003BE546 /* LocationData.swift */; };
+		B613C464307C989E003BE546 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C42D307C989E003BE546 /* NotificationService.swift */; };
+		B613C465307C989E003BE546 /* CameraServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C424307C989E003BE546 /* CameraServiceProtocol.swift */; };
+		B613C466307C989E003BE546 /* RatingScaleQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C447307C989E003BE546 /* RatingScaleQuestionView.swift */; };
+		B613C467307C989E003BE546 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C430307C989E003BE546 /* PermissionManager.swift */; };
+		B613C468307C989E003BE546 /* TimerBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C44E307C989E003BE546 /* TimerBadgeView.swift */; };
+		B613C469307C989E003BE546 /* TextQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C449307C989E003BE546 /* TextQuestionView.swift */; };
+		B613C46A307C989E003BE546 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C42B307C989E003BE546 /* APIEndpoint.swift */; };
+		B613C46B307C989E003BE546 /* NotificationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C42E307C989E003BE546 /* NotificationServiceProtocol.swift */; };
+		B613C46C307C989E003BE546 /* DeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C417307C989E003BE546 /* DeviceRegistration.swift */; };
+		B613C46D307C989E003BE546 /* SurveyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C41B307C989E003BE546 /* SurveyResponse.swift */; };
+		B613C46E307C989E003BE546 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C442307C989E003BE546 /* OnboardingView.swift */; };
+		B613C46F307C989E003BE546 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C423307C989E003BE546 /* CameraService.swift */; };
+		B613C470307C989E003BE546 /* ExpirationBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C43F307C989E003BE546 /* ExpirationBannerView.swift */; };
+		B613C471307C989E003BE546 /* PermissionRevokedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C443307C989E003BE546 /* PermissionRevokedView.swift */; };
+		B613C472307C989E003BE546 /* SurveyCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C44C307C989E003BE546 /* SurveyCompletedView.swift */; };
+		B613C473307C989E003BE546 /* SingleChoiceQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C448307C989E003BE546 /* SingleChoiceQuestionView.swift */; };
+		B613C474307C989E003BE546 /* ErrorBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C43C307C989E003BE546 /* ErrorBannerView.swift */; };
+		B613C475307C989E003BE546 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C419307C989E003BE546 /* Question.swift */; };
+		B613C476307C989E003BE546 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C439307C989E003BE546 /* CameraCaptureView.swift */; };
+		B613C477307C989E003BE546 /* PhotoPreviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C43A307C989E003BE546 /* PhotoPreviewCard.swift */; };
+		B613C478307C989E003BE546 /* ExpiredSurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C44B307C989E003BE546 /* ExpiredSurveyView.swift */; };
+		B613C479307C989E003BE546 /* AnyCodableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C416307C989E003BE546 /* AnyCodableValue.swift */; };
+		B613C47A307C989E003BE546 /* SurveyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C41E307C989E003BE546 /* SurveyRepositoryProtocol.swift */; };
+		B613C47B307C989E003BE546 /* MultipleChoiceQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C445307C989E003BE546 /* MultipleChoiceQuestionView.swift */; };
+		B613C47C307C989E003BE546 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C435307C989E003BE546 /* HomeViewModel.swift */; };
+		B613C47D307C989E003BE546 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C427307C989E003BE546 /* LocationServiceProtocol.swift */; };
+		B613C47E307C989E003BE546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C412307C989E003BE546 /* AppDelegate.swift */; };
+		B613C47F307C989E003BE546 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C434307C989E003BE546 /* CameraViewModel.swift */; };
+		B613C482307C989E003BE546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B613C420307C989E003BE546 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		000000000000000000000010 /* Simple-Surveys-IOS-proj */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Simple-Surveys-IOS-proj";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		000000000000000000000120 /* Simple-Surveys-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Surveys-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B613C411307C989E003BE546 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		B613C412307C989E003BE546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B613C413307C989E003BE546 /* SimpleSurveysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSurveysApp.swift; sourceTree = "<group>"; };
+		B613C414307C989E003BE546 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B613C416307C989E003BE546 /* AnyCodableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodableValue.swift; sourceTree = "<group>"; };
+		B613C417307C989E003BE546 /* DeviceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistration.swift; sourceTree = "<group>"; };
+		B613C418307C989E003BE546 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		B613C419307C989E003BE546 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B613C41A307C989E003BE546 /* SurveyConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyConfig.swift; sourceTree = "<group>"; };
+		B613C41B307C989E003BE546 /* SurveyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResponse.swift; sourceTree = "<group>"; };
+		B613C41D307C989E003BE546 /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
+		B613C41E307C989E003BE546 /* SurveyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepositoryProtocol.swift; sourceTree = "<group>"; };
+		B613C420307C989E003BE546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B613C421307C989E003BE546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B613C423307C989E003BE546 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		B613C424307C989E003BE546 /* CameraServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceProtocol.swift; sourceTree = "<group>"; };
+		B613C426307C989E003BE546 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B613C427307C989E003BE546 /* LocationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceProtocol.swift; sourceTree = "<group>"; };
+		B613C429307C989E003BE546 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B613C42A307C989E003BE546 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		B613C42B307C989E003BE546 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		B613C42D307C989E003BE546 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B613C42E307C989E003BE546 /* NotificationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationServiceProtocol.swift; sourceTree = "<group>"; };
+		B613C430307C989E003BE546 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		B613C431307C989E003BE546 /* PermissionManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManagerProtocol.swift; sourceTree = "<group>"; };
+		B613C434307C989E003BE546 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		B613C435307C989E003BE546 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B613C436307C989E003BE546 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B613C437307C989E003BE546 /* SurveyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewModel.swift; sourceTree = "<group>"; };
+		B613C439307C989E003BE546 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		B613C43A307C989E003BE546 /* PhotoPreviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCard.swift; sourceTree = "<group>"; };
+		B613C43C307C989E003BE546 /* ErrorBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBannerView.swift; sourceTree = "<group>"; };
+		B613C43D307C989E003BE546 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B613C43F307C989E003BE546 /* ExpirationBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpirationBannerView.swift; sourceTree = "<group>"; };
+		B613C440307C989E003BE546 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B613C442307C989E003BE546 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B613C443307C989E003BE546 /* PermissionRevokedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRevokedView.swift; sourceTree = "<group>"; };
+		B613C445307C989E003BE546 /* MultipleChoiceQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestionView.swift; sourceTree = "<group>"; };
+		B613C446307C989E003BE546 /* NumericQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericQuestionView.swift; sourceTree = "<group>"; };
+		B613C447307C989E003BE546 /* RatingScaleQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingScaleQuestionView.swift; sourceTree = "<group>"; };
+		B613C448307C989E003BE546 /* SingleChoiceQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoiceQuestionView.swift; sourceTree = "<group>"; };
+		B613C449307C989E003BE546 /* TextQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextQuestionView.swift; sourceTree = "<group>"; };
+		B613C44B307C989E003BE546 /* ExpiredSurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiredSurveyView.swift; sourceTree = "<group>"; };
+		B613C44C307C989E003BE546 /* SurveyCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyCompletedView.swift; sourceTree = "<group>"; };
+		B613C44D307C989E003BE546 /* SurveyContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyContainerView.swift; sourceTree = "<group>"; };
+		B613C44E307C989E003BE546 /* TimerBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBadgeView.swift; sourceTree = "<group>"; };
+		B613C452307C989E003BE546 /* IOS_FRONTEND_IMPLEMENTATION_PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = IOS_FRONTEND_IMPLEMENTATION_PLAN.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		000000000000000130000000 /* Frameworks */ = {
@@ -30,7 +117,7 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000010 /* Simple-Surveys-IOS-proj */,
+				B613C453307C989E003BE546 /* Simple-Surveys-iOS */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -38,17 +125,223 @@
 		000000000000000000000020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000120 /* Simple-Surveys-IOS-proj.app */,
+				000000000000000000000120 /* Simple-Surveys-IOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B613C415307C989E003BE546 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B613C411307C989E003BE546 /* AppConfiguration.swift */,
+				B613C412307C989E003BE546 /* AppDelegate.swift */,
+				B613C413307C989E003BE546 /* SimpleSurveysApp.swift */,
+				B613C414307C989E003BE546 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B613C41C307C989E003BE546 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B613C416307C989E003BE546 /* AnyCodableValue.swift */,
+				B613C417307C989E003BE546 /* DeviceRegistration.swift */,
+				B613C418307C989E003BE546 /* LocationData.swift */,
+				B613C419307C989E003BE546 /* Question.swift */,
+				B613C41A307C989E003BE546 /* SurveyConfig.swift */,
+				B613C41B307C989E003BE546 /* SurveyResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B613C41F307C989E003BE546 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B613C41D307C989E003BE546 /* SurveyRepository.swift */,
+				B613C41E307C989E003BE546 /* SurveyRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B613C422307C989E003BE546 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B613C420307C989E003BE546 /* Assets.xcassets */,
+				B613C421307C989E003BE546 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B613C425307C989E003BE546 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B613C423307C989E003BE546 /* CameraService.swift */,
+				B613C424307C989E003BE546 /* CameraServiceProtocol.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B613C428307C989E003BE546 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B613C426307C989E003BE546 /* LocationService.swift */,
+				B613C427307C989E003BE546 /* LocationServiceProtocol.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		B613C42C307C989E003BE546 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B613C429307C989E003BE546 /* APIClient.swift */,
+				B613C42A307C989E003BE546 /* APIClientProtocol.swift */,
+				B613C42B307C989E003BE546 /* APIEndpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B613C42F307C989E003BE546 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B613C42D307C989E003BE546 /* NotificationService.swift */,
+				B613C42E307C989E003BE546 /* NotificationServiceProtocol.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		B613C432307C989E003BE546 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				B613C430307C989E003BE546 /* PermissionManager.swift */,
+				B613C431307C989E003BE546 /* PermissionManagerProtocol.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		B613C433307C989E003BE546 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B613C425307C989E003BE546 /* Camera */,
+				B613C428307C989E003BE546 /* Location */,
+				B613C42C307C989E003BE546 /* Network */,
+				B613C42F307C989E003BE546 /* Notifications */,
+				B613C432307C989E003BE546 /* Permissions */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B613C438307C989E003BE546 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B613C434307C989E003BE546 /* CameraViewModel.swift */,
+				B613C435307C989E003BE546 /* HomeViewModel.swift */,
+				B613C436307C989E003BE546 /* OnboardingViewModel.swift */,
+				B613C437307C989E003BE546 /* SurveyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B613C43B307C989E003BE546 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B613C439307C989E003BE546 /* CameraCaptureView.swift */,
+				B613C43A307C989E003BE546 /* PhotoPreviewCard.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B613C43E307C989E003BE546 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B613C43C307C989E003BE546 /* ErrorBannerView.swift */,
+				B613C43D307C989E003BE546 /* LoadingView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B613C441307C989E003BE546 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B613C43F307C989E003BE546 /* ExpirationBannerView.swift */,
+				B613C440307C989E003BE546 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B613C444307C989E003BE546 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B613C442307C989E003BE546 /* OnboardingView.swift */,
+				B613C443307C989E003BE546 /* PermissionRevokedView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B613C44A307C989E003BE546 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				B613C445307C989E003BE546 /* MultipleChoiceQuestionView.swift */,
+				B613C446307C989E003BE546 /* NumericQuestionView.swift */,
+				B613C447307C989E003BE546 /* RatingScaleQuestionView.swift */,
+				B613C448307C989E003BE546 /* SingleChoiceQuestionView.swift */,
+				B613C449307C989E003BE546 /* TextQuestionView.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		B613C44F307C989E003BE546 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				B613C44B307C989E003BE546 /* ExpiredSurveyView.swift */,
+				B613C44C307C989E003BE546 /* SurveyCompletedView.swift */,
+				B613C44D307C989E003BE546 /* SurveyContainerView.swift */,
+				B613C44E307C989E003BE546 /* TimerBadgeView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		B613C450307C989E003BE546 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B613C43B307C989E003BE546 /* Camera */,
+				B613C43E307C989E003BE546 /* Common */,
+				B613C441307C989E003BE546 /* Home */,
+				B613C444307C989E003BE546 /* Onboarding */,
+				B613C44A307C989E003BE546 /* Questions */,
+				B613C44F307C989E003BE546 /* Survey */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B613C453307C989E003BE546 /* Simple-Surveys-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B613C415307C989E003BE546 /* App */,
+				B613C41C307C989E003BE546 /* Models */,
+				B613C41F307C989E003BE546 /* Repositories */,
+				B613C422307C989E003BE546 /* Resources */,
+				B613C433307C989E003BE546 /* Services */,
+				B613C438307C989E003BE546 /* ViewModels */,
+				B613C450307C989E003BE546 /* Views */,
+				B613C484307CA940003BE546 /* Docs */,
+			);
+			path = "Simple-Surveys-iOS";
+			sourceTree = "<group>";
+		};
+		B613C484307CA940003BE546 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				B613C452307C989E003BE546 /* IOS_FRONTEND_IMPLEMENTATION_PLAN.md */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		000000000000000100000000 /* Simple-Surveys-IOS-proj */ = {
+		000000000000000100000000 /* Simple-Surveys-IOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "Simple-Surveys-IOS-proj" */;
+			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "Simple-Surveys-IOS" */;
 			buildPhases = (
 				000000000000000120000000 /* Sources */,
 				000000000000000130000000 /* Frameworks */,
@@ -56,12 +349,9 @@
 			);
 			buildRules = (
 			);
-			fileSystemSynchronizedGroups = (
-				000000000000000000000010 /* Simple-Surveys-IOS-proj */,
-			);
-			name = "Simple-Surveys-IOS-proj";
+			name = "Simple-Surveys-IOS";
 			productName = MyApp;
-			productReference = 000000000000000000000120 /* Simple-Surveys-IOS-proj.app */;
+			productReference = 000000000000000000000120 /* Simple-Surveys-IOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +383,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				000000000000000100000000 /* Simple-Surveys-IOS-proj */,
+				000000000000000100000000 /* Simple-Surveys-IOS */,
 			);
 		};
 /* End PBXProject section */
@@ -102,6 +392,7 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				B613C482307C989E003BE546 /* Assets.xcassets in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -110,6 +401,50 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				B613C454307C989E003BE546 /* SimpleSurveysApp.swift in Sources */,
+				B613C455307C989E003BE546 /* SurveyContainerView.swift in Sources */,
+				B613C456307C989E003BE546 /* AppConfiguration.swift in Sources */,
+				B613C457307C989E003BE546 /* NumericQuestionView.swift in Sources */,
+				B613C458307C989E003BE546 /* HomeView.swift in Sources */,
+				B613C459307C989E003BE546 /* LocationService.swift in Sources */,
+				B613C45A307C989E003BE546 /* Theme.swift in Sources */,
+				B613C45B307C989E003BE546 /* SurveyConfig.swift in Sources */,
+				B613C45C307C989E003BE546 /* SurveyViewModel.swift in Sources */,
+				B613C45D307C989E003BE546 /* PermissionManagerProtocol.swift in Sources */,
+				B613C45E307C989E003BE546 /* LoadingView.swift in Sources */,
+				B613C45F307C989E003BE546 /* APIClientProtocol.swift in Sources */,
+				B613C460307C989E003BE546 /* SurveyRepository.swift in Sources */,
+				B613C461307C989E003BE546 /* APIClient.swift in Sources */,
+				B613C462307C989E003BE546 /* OnboardingViewModel.swift in Sources */,
+				B613C463307C989E003BE546 /* LocationData.swift in Sources */,
+				B613C464307C989E003BE546 /* NotificationService.swift in Sources */,
+				B613C465307C989E003BE546 /* CameraServiceProtocol.swift in Sources */,
+				B613C466307C989E003BE546 /* RatingScaleQuestionView.swift in Sources */,
+				B613C467307C989E003BE546 /* PermissionManager.swift in Sources */,
+				B613C468307C989E003BE546 /* TimerBadgeView.swift in Sources */,
+				B613C469307C989E003BE546 /* TextQuestionView.swift in Sources */,
+				B613C46A307C989E003BE546 /* APIEndpoint.swift in Sources */,
+				B613C46B307C989E003BE546 /* NotificationServiceProtocol.swift in Sources */,
+				B613C46C307C989E003BE546 /* DeviceRegistration.swift in Sources */,
+				B613C46D307C989E003BE546 /* SurveyResponse.swift in Sources */,
+				B613C46E307C989E003BE546 /* OnboardingView.swift in Sources */,
+				B613C46F307C989E003BE546 /* CameraService.swift in Sources */,
+				B613C470307C989E003BE546 /* ExpirationBannerView.swift in Sources */,
+				B613C471307C989E003BE546 /* PermissionRevokedView.swift in Sources */,
+				B613C472307C989E003BE546 /* SurveyCompletedView.swift in Sources */,
+				B613C473307C989E003BE546 /* SingleChoiceQuestionView.swift in Sources */,
+				B613C474307C989E003BE546 /* ErrorBannerView.swift in Sources */,
+				B613C475307C989E003BE546 /* Question.swift in Sources */,
+				B613C476307C989E003BE546 /* CameraCaptureView.swift in Sources */,
+				B613C477307C989E003BE546 /* PhotoPreviewCard.swift in Sources */,
+				B613C478307C989E003BE546 /* ExpiredSurveyView.swift in Sources */,
+				B613C479307C989E003BE546 /* AnyCodableValue.swift in Sources */,
+				B613C47A307C989E003BE546 /* SurveyRepositoryProtocol.swift in Sources */,
+				B613C47B307C989E003BE546 /* MultipleChoiceQuestionView.swift in Sources */,
+				B613C47C307C989E003BE546 /* HomeViewModel.swift in Sources */,
+				B613C47D307C989E003BE546 /* LocationServiceProtocol.swift in Sources */,
+				B613C47E307C989E003BE546 /* AppDelegate.swift in Sources */,
+				B613C47F307C989E003BE546 /* CameraViewModel.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -247,7 +582,7 @@
 			};
 			name = Release;
 		};
-		000000000000000111000000 /* Debug configuration for PBXNativeTarget "Simple-Surveys-IOS-proj" */ = {
+		000000000000000111000000 /* Debug configuration for PBXNativeTarget "Simple-Surveys-IOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,7 +590,8 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Simple-Surveys-iOS/Resources/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -284,7 +620,7 @@
 			};
 			name = Debug;
 		};
-		000000000000000112000000 /* Release configuration for PBXNativeTarget "Simple-Surveys-IOS-proj" */ = {
+		000000000000000112000000 /* Release configuration for PBXNativeTarget "Simple-Surveys-IOS" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +628,8 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Simple-Surveys-iOS/Resources/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -332,11 +669,11 @@
 			);
 			defaultConfigurationName = Release;
 		};
-		000000000000000110000000 /* Build configuration list for PBXNativeTarget "Simple-Surveys-IOS-proj" */ = {
+		000000000000000110000000 /* Build configuration list for PBXNativeTarget "Simple-Surveys-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000111000000 /* Debug configuration for PBXNativeTarget "Simple-Surveys-IOS-proj" */,
-				000000000000000112000000 /* Release configuration for PBXNativeTarget "Simple-Surveys-IOS-proj" */,
+				000000000000000111000000 /* Debug configuration for PBXNativeTarget "Simple-Surveys-IOS" */,
+				000000000000000112000000 /* Release configuration for PBXNativeTarget "Simple-Surveys-IOS" */,
 			);
 			defaultConfigurationName = Release;
 		};
